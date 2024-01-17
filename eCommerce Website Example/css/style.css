@@ -1,0 +1,756 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.box{
+    max-width: 400px;
+    width: 100%;
+}
+
+.box .search-box{
+    position: relative;
+    height: 50px;
+    /*max-width: 380px;*/
+    max-width: 50px;
+    margin: auto;
+    background: #CA5FF2;
+    color:#fff;
+    margin: auto;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+#check:checked ~ .search-box{
+    max-width: 380px;
+
+}
+
+.search-box input{
+    /*position: relative;*/
+    /*position: absolute;*/
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    color:#fff;
+    background: #CA5FF2;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.search-box .icon{
+    position: absolute;
+    /*right: -2; /* May need to adjust this */
+    right: 0; /* May need to adjust this */
+    top: 0;
+    width: 50px;
+    background: #CA5FF2;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+#check:checked ~ .search-box .icon{
+    background: #CA5FF2;
+    color: #fff;
+    width: 60px;
+    border-radius: 0 25px 25px 0;
+}
+
+#check{
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* formatting for all link elements */
+a{
+    text-decoration: none;
+    color: #555;
+    /*color: #d49633;*/
+}
+
+a:hover{
+    
+    /*color: #d43333;*/
+    color:#fff;
+    background-color: #d49633;
+}
+
+/* Formatting for all paragraph elements */
+p{
+    color: #555;
+}
+
+/* Container */
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Row */
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Columns */
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+/* Button */
+.btn{
+    display: inline-block;
+    background: #d49633;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #d43333;
+}
+
+/* Header */
+.header{
+    background: radial-gradient(#fff, #CA5FF2);
+}
+
+.header .row{
+    margin-top: 70px;
+}
+
+.categories{
+    margin: 70px 0;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img{
+    width: 100%;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4{
+    flex-basis: 33%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #CA5FF2;
+}
+
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.col-4:hover{
+    transform: translateY(-10px);
+}
+
+.col-4 .btn{
+    margin-left:80px;
+}
+
+.rating .fa{
+    color:#d43333;
+}
+
+/*---------------Offer------------------------*/
+.offer{
+    background: radial-gradient(#fff, #CA5FF2);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img:hover{
+    transition: transform 0.5s;
+    transform: translateY(-10px);
+}
+
+small{
+    color:#555
+}
+
+/*----------------Brands---------------------*/
+
+.brands{
+    margin: 100px auto;
+}
+
+.col-5{
+    width: 160px;
+}
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover{
+    /*filter: grayscale(0);*/
+    transition: transform 0.5s;
+    transform: translateY(-10px);
+}
+
+/*---------------- Footer ---------------------*/
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis:30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+    cursor: pointer;
+}
+
+.footer hr{
+    border: none;
+    background: #d43333;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*------------------media query for menu--------------------*/
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+
+    /* 1:17:08 */
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+} 
+
+/*------------------ productsDisplay | All Products --------------------*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select{
+    border: 1px solid #CA5FF2;
+    padding: 5px;
+}
+
+select:focus{
+    outline: none;
+}
+
+.page-btn{
+    margin: 0 auto 80px;
+}
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #CA5FF2;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background: #CA5FF2;
+    color:#fff;
+}
+
+/*------------------ Product Info Display | Product Details --------------------*/
+.single-product{
+    margin-top: 80px;
+}
+
+.single-product .col-2 img{
+    padding: 0;
+}
+
+.single-product .col-2{
+    padding: 20px;
+}
+
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #CA5FF2;
+
+}
+
+input:focus{
+    outline: none;
+}
+
+.single-product .fa{
+    color: #CA5FF2;
+    margin-left: 10px;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/*------------------Cart Items --------------------*/
+.cart-page{
+margin: 80px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{ 
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #CA5FF2;
+    font-weight: normal;
+
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+
+td img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid #CA5FF2;
+    width: 100%;
+    max-width: 300px;
+}
+
+td:last-child{
+text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+/*------------------ CC Payment Form --------------------*/
+
+.payment-div{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.payment-container{
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+
+.payment-container form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 160px;
+}
+
+.payment-container form .inputBox{
+    margin-top: 20px;
+}
+
+.payment-container form .inputBox span{
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+
+}
+
+.payment-container form .inputBox input,
+.payment-container form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.3);
+    color: #444;
+}
+
+.payment-container form .payment-flexbox{
+    display: flex;
+    gap: 15px;
+}
+
+.payment-container form .payment-flexbox .inputBox{
+    flex: 1 1 150px;
+}
+
+.payment-container form .btn{
+    width: 100%;
+    font-size: 20px;
+    break-before: 5px;
+    cursor: pointer;
+}
+
+.payment-container .card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.payment-container .card-container .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; 
+    left: 0;
+    background: linear-gradient(45deg, blueviolet, deeppink);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding: 20px;
+    transform:perspective(1000px) rotateY(0deg);
+    transition:transform .4s ease-out;
+}
+
+.payment-container .card-container .front .image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.payment-container .card-container .front .image img{
+    height: 50px;
+    border-radius: 5px;
+}
+
+.payment-container .card-container .front .card-number-box{
+    padding: 30px 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.payment-container .card-container .front .payment-flexbox{
+    display: flex;
+}
+
+.payment-container .card-container .front .payment-flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.payment-container .card-container .front .payment-flexbox .box{
+    font-size: 15px;
+    color: #fff;
+}
+
+.payment-container .card-container .back{ /* 13:19 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, blueviolet, deeppink);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform:perspective(1000px) rotateY(180deg);
+    transition:transform .4s ease-out;
+}
+
+.payment-container .card-container .back .stripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.payment-container .card-container .back .box{ /* 14:48 */
+    padding: 0 20px;
+    
+}
+
+.payment-container .card-container .back .box span{
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.payment-container .card-container .back .box .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.payment-container .card-container .back .box img{ /* 15:48 */
+    margin-top: 30px;
+    height: 30px;
+
+}
+
+/*--------------------------------------Login and Register-------------------------*/
+
+.loginInput{
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #CA5FF2;
+}
+
+.form-.small-container .small-container .row .style2 .btn{
+    width: 100%;
+    font-size: 20px;
+    break-before: 5px;
+    cursor: pointer;
+}
+
+
+
+/*------------------media query for less than 600 screen size --------------------*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+
+    .single-product .row{
+        text-align: left;
+    }
+
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .cart-info p{
+        display: none;
+    }
+}
+
+
