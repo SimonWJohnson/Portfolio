@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\TAFE\_Term_02\AWS\__Assessment02\StudentEnrollmentSystem\StudentEnrollmentSystem\obj\Release\Package\PackageTmp" />
+  <setAcl path="D:\TAFE\_Term_02\AWS\__Assessment02\StudentEnrollmentSystem\StudentEnrollmentSystem\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="D:\TAFE\_Term_02\AWS\__Assessment02\StudentEnrollmentSystem\StudentEnrollmentSystem\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

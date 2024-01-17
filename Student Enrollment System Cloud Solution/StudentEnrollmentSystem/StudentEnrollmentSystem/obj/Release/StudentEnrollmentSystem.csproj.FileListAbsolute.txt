@@ -1,0 +1,7 @@
+D:\TAFE\_Term_02\AWS\__Assessment02\StudentEnrollmentSystem\StudentEnrollmentSystem\bin\StudentEnrollmentSystem.dll.config
+D:\TAFE\_Term_02\AWS\__Assessment02\StudentEnrollmentSystem\StudentEnrollmentSystem\bin\StudentEnrollmentSystem.dll
+D:\TAFE\_Term_02\AWS\__Assessment02\StudentEnrollmentSystem\StudentEnrollmentSystem\bin\StudentEnrollmentSystem.pdb
+D:\TAFE\_Term_02\AWS\__Assessment02\StudentEnrollmentSystem\StudentEnrollmentSystem\obj\Release\StudentEnrollmentSystem.csproj.AssemblyReference.cache
+D:\TAFE\_Term_02\AWS\__Assessment02\StudentEnrollmentSystem\StudentEnrollmentSystem\obj\Release\StudentEnrollmentSystem.csproj.CoreCompileInputs.cache
+D:\TAFE\_Term_02\AWS\__Assessment02\StudentEnrollmentSystem\StudentEnrollmentSystem\obj\Release\StudentEnrollmentSystem.dll
+D:\TAFE\_Term_02\AWS\__Assessment02\StudentEnrollmentSystem\StudentEnrollmentSystem\obj\Release\StudentEnrollmentSystem.pdb

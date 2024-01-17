@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="StudentEnrollmentSystemConnectionString-Web.config Connection String" description="StudentEnrollmentSystemConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=clpsimon2023.database.windows.net;Initial Catalog=StudentEnrollmentSystem;User ID=simon;Password=#Password" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\TAFE\\_Term_02\\AWS\\__Assessment02\\StudentEnrollmentSystem\\StudentEnrollmentSystem\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='StudentEnrollmentSystemConnectionString']/@connectionString" />
+  </parameter>
+</parameters>
