@@ -1,0 +1,6 @@
+123, Milk 2l, 3.5
+456, Bread 500g, 2.5
+789, Coca-Cola 375ml, 1.99
+147, Soap 300g, 2.78
+258, Cinnamon Gum 15 sticks, 0.99
+369, Chicken Schnitzel 500g, 6.99
