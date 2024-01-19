@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--***
+        Author - Simon Johnson
+        Friday 17th June 2022
+        Assignment Form Validation 
+    -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            AssignmentPart1
+        </title>
+    </head>
+    <body>
+        <form id="userForm" onsubmit="return validateForm()"> 
+            <fieldset id="fieldset1" name="fieldset1"> <!-- First fieldset Customer Details -->
+                <legend id="legend1">Customer Details</legend>
+                <label for="fName" id="firstName">First Name:</label>
+                <input type="text" id="fName" name="firstName" autofocus="autofocus" onfocus="changeBgd(this)" onblur="resetBgd(this)"/>
+                    <span id="fNameError"></span><br /><br />
+                <label for="lName" id="lastName">Last Name:</label>
+                <input type="text" id="lName" name="lastName" onfocus="changeBgd(this)" onblur="resetBgd(this)"/>
+                    <span id="lNameError"></span><br /><br />
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" onfocus="changeBgd(this)" onblur="resetBgd(this)"/>
+                    <span id="addressError"></span><br /><br />
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" onfocus="changeBgd(this)" onblur="resetBgd(this)"/>
+                    <span id="phoneError"></span><br /><br />
+                <label for="postcode">Postcode:</label>
+                <input type="text" id="postcode" name="postcode" onfocus="changeBgd(this)" onblur="resetBgd(this)"/>
+                    <span id="postcodeError"></span><br /><br />
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" onfocus="changeBgd(this)" onblur="resetBgd(this)"/>
+                    <span id="emailError"></span><br /><br />
+            </fieldset>
+            <fieldset id="fieldset2" name="fieldset2"> <!-- Second fieldset Payment Details -->
+                <legend id="legend2">Payment Details</legend>
+                <label for="creditCard">Credit Card:</label>
+                <select id="creditCard" onfocus="changeBgd(this)" onblur="resetBgd(this)"> <!-- First drop down list -->
+                    <option value="choose">Choose</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="americanExpress">American Express</option>
+                </select>
+                    <span id="creditCardError"></span><br /><br />
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" onfocus="changeBgd(this)" onblur="resetBgd(this)"/>
+                    <span id="cardNumberError"></span><br /><br />
+                <label for="ccv">CCV:</label>
+                <input type="text" id="ccv" name="ccv" onfocus="changeBgd(this)" onblur="resetBgd(this)"/>
+                    <span id="ccvError"></span><br /><br />
+                <label for="expiryMonth">Expiry MM/YY:</label>
+                <select id="expiryMonth" onfocus="changeBgd(this)" onblur="resetBgd(this)"> <!-- Second drop down list -->
+                    <option value="month">Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                    <span id="expiryMonthError"></span>
+                <label for="expiryYear">/</label>
+                <select id="expiryYear" onfocus="changeBgd(this)" onblur="resetBgd(this)"> <!-- Third drop down list -->
+                    <option value="year">Year</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </select>
+                    <span id="expiryYearError"></span><br /><br />
+            </fieldset>
+            <div id="buttonSection"> <!-- Div container for buttons -->
+                <br /><br />
+                <button type="submit" id="submit">Submit</button>
+                <button type="button" id="help" onclick="helpPage()">Help</button><br /><br />
+                <button type="button" id="website" onClick="popup()">Go to another website</button><br /><br />
+            </div>
+        </form> 
+        <script src="../js/assignmentPart1.js"></script> <!-- .js script -->     
+    </body>
+</html>
