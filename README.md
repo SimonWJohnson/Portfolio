@@ -25,3 +25,6 @@ A C# project demonstrating the construction of a website user interface for a fi
 ![Screenshot of the SAMS Database ERD](https://github.com/SimonWJohnson/Portfolio/blob/master/_ImageRepos/mysql_Airline_ERD.png)
 
 A MySQL project demonstrating the construction of a database for a fictional Airport Maintenance Service.
+
+## Web Bookstore Project (Java)
+![Screenshot of the Web Bookstore project](https://github.com/SimonWJohnson/Portfolio/blob/master/_ImageRepos/java_WebBookstoreProject.PNG)
