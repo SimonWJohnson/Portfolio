@@ -11,3 +11,7 @@ The purpose of this portfolio is to demonstrate my experience and skills as a pr
 A project creating a mock eCommerce website selling guitars.  The website can be found [hosted here](guitars.free.nf)
 
 ## Student Enrollment System Cloud Solution
+![Screenshot of the Student Enrollment System Cloud Solution Web form UI] (_ImageRepos/studentEnrollmentSystem_CloudSolution.png)
+
+A C# project demonstrating the construction of a cloud based multiuser student enrollment system application.  
+Registered users are able to enroll in courses, view courses, and view their timetable amongst other things. 
