@@ -28,3 +28,5 @@ A MySQL project demonstrating the construction of a database for a fictional Air
 
 ## Web Bookstore Project (Java)
 ![Screenshot of the Web Bookstore project](https://github.com/SimonWJohnson/Portfolio/blob/master/_ImageRepos/java_WebBookstoreProject.PNG)
+
+A Java Web project involving refactoring/reengineering a legacy online web based Java EE application to use the Model View Controller framework. 
