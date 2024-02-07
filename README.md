@@ -27,11 +27,9 @@ A C# project demonstrating the construction of a website user interface for a fi
 A MySQL project demonstrating the construction of a database for a fictional Airport Maintenance Service.
 
 ## Shopping World Online Store Database (NoSQL)
-![Screenshot of the Shoppingworld Mongo Schema](https://github.com/SimonWJohnson/Portfolio/blob/master/_ImageRepos/)
+![Screenshot of the Shoppingworld Mongo Schema](https://github.com/SimonWJohnson/Portfolio/blob/master/_ImageRepos/mongoSchema.png)
 
 A project demonstrating my experience working with NoSQL databases and document-oriented data modelling.
-
-
 
 ## Web Bookstore Project (Java)
 ![Screenshot of the Web Bookstore project](https://github.com/SimonWJohnson/Portfolio/blob/master/_ImageRepos/java_WebBookstoreProject.PNG)
