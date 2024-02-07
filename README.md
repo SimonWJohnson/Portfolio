@@ -30,3 +30,8 @@ A MySQL project demonstrating the construction of a database for a fictional Air
 ![Screenshot of the Web Bookstore project](https://github.com/SimonWJohnson/Portfolio/blob/master/_ImageRepos/java_WebBookstoreProject.PNG)
 
 A Java Web project involving refactoring/reengineering a legacy online web based Java EE application to use the Model View Controller framework. 
+
+## Agile Methodology and UML
+
+An example of a Student Enrollment System design using the Agile methodolgy in system design.  This project demonstrates my ability to work effectively within a team, analyse system requirements, and design solutions using UML.
+A copy of the the final assignment, with each members contribution clearly labelled, can be found [here](https://docs.google.com/document/d/1w4dztovl1NZdbxhf-ak7HnbPiusMqQLX/edit?usp=sharing&ouid=107644545967943001838&rtpof=true&sd=true).
