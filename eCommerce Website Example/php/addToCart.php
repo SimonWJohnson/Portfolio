@@ -59,7 +59,8 @@ else
         $price = $row["price"];
         
         // Add product to the cart
-        $newProduct = new Product($productID, $productName, $productDescription, $manufacturer, $price, $qtyInStock, $image);
+        $newProduct = new Product($productID, $productName, $productDescription, $manufacturer, $price, $qtyInStock);
+        $newProduct->setImageList();
         $newProduct->setQtySelected($qty); 
         $cart->addProduct($newProduct);
 

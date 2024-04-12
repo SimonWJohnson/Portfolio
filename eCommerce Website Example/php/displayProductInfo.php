@@ -16,6 +16,7 @@
 
     // Prepare the query
     $query = "SELECT * FROM product WHERE (productID = ?)";
+
     $stmt = $mysqli -> prepare($query);
 
     // Prepare the statement
@@ -27,27 +28,28 @@
     // Get the result
     $result = $stmt -> get_result();
 
+    // https://www.youtube.com/watch?v=9ITnK_bWaKs
     // Print out the details of the product
     if($result -> num_rows == 1)
     {
         $row = $result -> fetch_assoc();
-        $product = new Product($row["productID"], $row["productName"], $row["productDescription"], $row["manufacturer"], $row["price"], $row["qtyInStock"], $row["image"]);
-        
+        $product = new Product($row["productID"], $row["productName"], $row["productDescription"], $row["manufacturer"], $row["price"], $row["qtyInStock"]); // remove 'image' from product class, replace with list of images, $row["image"]
+        $product->setImageList();
         // Product Image Gallery
         echo "<div class='col-2'>";
-        echo "<img src='".$product->getImage()."' width='100%' id='ProductImg'>";
+        echo "<img src='".$product->getImage(0)."' width='100%' id='ProductImg'>";
         echo "<div class='small-img-row'>";
         echo "<div class='small-img-col'>";
-        echo "<img src='".$product->getImage()."' width='100%' class='small-img'>";
+        echo "<img src='".$product->getImage(1)."' width='100%' class='small-img'>";
         echo "</div>";
         echo "<div class='small-img-col'>";
-        echo "<img src='".$product->getImage()."' width='100%' class='small-img'>";
+        echo "<img src='".$product->getImage(2)."' width='100%' class='small-img'>";
         echo "</div>";
         echo "<div class='small-img-col'>";
-        echo "<img src='".$product->getImage()."' width='100%' class='small-img'>";
+        echo "<img src='".$product->getImage(3)."' width='100%' class='small-img'>";
         echo "</div>";
         echo "<div class='small-img-col'>";
-        echo "<img src='".$product->getImage()."' width='100%' class='small-img'>";
+        echo "<img src='".$product->getImage(4)."' width='100%' class='small-img'>";
         echo "</div>";
         echo "</div>";
         echo "</div>";

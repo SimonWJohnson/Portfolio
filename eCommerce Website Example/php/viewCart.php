@@ -55,7 +55,7 @@
             $productName = $product->getProductName();      
             $price = $product->getPrice();
             $qtySelected = $product->getQtySelected();
-            $image = $product->getImage();
+            $image = $product->getImage(0);
 
             // Calculations
             $subTotal = $product->getCostTotal();

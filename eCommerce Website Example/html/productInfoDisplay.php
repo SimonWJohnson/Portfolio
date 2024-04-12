@@ -206,7 +206,9 @@
             {
                 SmallImg[i].addEventListener('click', function()
                 {
+                    temp = ProductImg.src;
                     ProductImg.src = this.src; // Use 'this' to refer to the current small-img
+                    this.src = temp;
                 })
             }
         </script>
