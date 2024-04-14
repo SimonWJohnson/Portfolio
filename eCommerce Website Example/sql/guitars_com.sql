@@ -50,13 +50,6 @@ INSERT INTO `address` (`street`, `suburb`, `city`, `state`, `country`, `postcode
 ('123 Everystreet', 'Everywhere', 'Adelaide', 'SA', 'Australia', '5022', 1012),
 ('666 phplane', 'Henley Beach', 'Adelaide', 'SA', 'Australia', '5000', 1013),
 ('nil', 'nil', 'nil', 'nil', 'nil', 'nil', 1014),
-('01 First Street', 'Suburb', 'Adelaide', 'SA', 'Australia', '5000', 1015),
-('01 First Street', 'Suburb', 'Adelaide', 'SA', 'Australia', '5000', 1016),
-('01 First Street', 'Suburb', 'Adelaide', 'SA', 'Australia', '5000', 1017),
-('01 First Street', 'Suburb', 'Adelaide', 'SA', 'Australia', '5000', 1018),
-('01 First Street', 'Suburb', 'Adelaide', 'SA', 'Australia', '5000', 1019),
-('01 First Street', 'Suburb', 'Adelaide', 'SA', 'Australia', '5000', 1020),
-('01 First Street', 'Suburb', 'Adelaide', 'SA', 'Australia', '5000', 1021),
 ('01 First Street', 'Suburb', 'Adelaide', 'SA', 'Australia', '5000', 1022);
 
 -- --------------------------------------------------------
