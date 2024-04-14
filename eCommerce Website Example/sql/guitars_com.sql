@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Generation Time: Dec 04, 2023 at 06:05 PM
+-- Generation Time: Apr 14, 2024 at 05:35 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -88,13 +88,6 @@ INSERT INTO `customer` (`customerID`, `firstName`, `lastName`, `email`, `telepho
 (1012, 'Vanessa', 'Hocking', 'vanessa@email.com', '0422789456'),
 (1013, 'Joe', 'Mama', 'phat@email.com', '0422999999'),
 (1014, 'guest', 'account', 'guestaccount@email.com', '0000000000'),
-(1015, 'John', 'Simonson', 'john@email.com', '0422321654'),
-(1016, 'John', 'Simonson', 'john@email.com', '0422321654'),
-(1017, 'John', 'Simonson', 'john@email.com', '0422321654'),
-(1018, 'John', 'Simonson', 'john@email.com', '0422321654'),
-(1019, 'John', 'Simonson', 'john@email.com', '0422321654'),
-(1020, 'John', 'Simonson', 'john@email.com', '0422321654'),
-(1021, 'John', 'Simonson', 'john@email.com', '0422321654'),
 (1022, 'John', 'Simonson', 'john@email.com', '0422321654');
 
 -- --------------------------------------------------------
@@ -124,14 +117,79 @@ INSERT INTO `customerlogin` (`email`, `password`, `customerID`) VALUES
 ('vanessa@email.com', '12UFlHxel6uMM', 1012),
 ('phat@email.com', '12UFlHxel6uMM', 1013),
 ('guestaccount@email.com', '12UFlHxel6uMM', 1014),
-('john@email.com', '12UFlHxel6uMM', 1015),
-('john@email.com', '12UFlHxel6uMM', 1016),
-('john@email.com', '12UFlHxel6uMM', 1017),
-('john@email.com', '12UFlHxel6uMM', 1018),
-('john@email.com', '12UFlHxel6uMM', 1019),
-('john@email.com', '12UFlHxel6uMM', 1020),
-('john@email.com', '12UFlHxel6uMM', 1021),
 ('john@email.com', '12UFlHxel6uMM', 1022);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `images`
+--
+
+CREATE TABLE `images` (
+  `imageID` int(11) NOT NULL,
+  `productID` int(11) DEFAULT NULL,
+  `imagePath` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `images`
+--
+
+INSERT INTO `images` (`imageID`, `productID`, `imagePath`) VALUES
+(1, 1, '../images/_gibson/_lpSupreme/lpSupreme01.png'),
+(2, 1, '../images/_gibson/_lpSupreme/lpSupreme02.png'),
+(3, 1, '../images/_gibson/_lpSupreme/lpSupreme03.png'),
+(4, 1, '../images/_gibson/_lpSupreme/lpSupreme04.png'),
+(5, 1, '../images/_gibson/_lpSupreme/lpSupreme05.png'),
+(6, 2, '../images/_gibson/_70sFlyingV_White/70sFlyingVWhite01.png'),
+(7, 2, '../images/_gibson/_70sFlyingV_White/70sFlyingVWhite02.png'),
+(8, 2, '../images/_gibson/_70sFlyingV_White/70sFlyingVWhite03.png'),
+(9, 2, '../images/_gibson/_70sFlyingV_White/70sFlyingVWhite04.png'),
+(14, 2, '../images/_gibson/_70sFlyingV_White/70sFlyingVWhite01.png'),
+(15, 3, '../images/_gibson/_70sExplorer_White/70sExplorerWhite01.png'),
+(16, 3, '../images/_gibson/_70sExplorer_White/70sExplorerWhite02.png'),
+(17, 3, '../images/_gibson/_70sExplorer_White/70sExplorerWhite03.png'),
+(18, 3, '../images/_gibson/_70sExplorer_White/70sExplorerWhite04.png'),
+(19, 3, '../images/_gibson/_70sExplorer_White/70sExplorerWhite05.png'),
+(20, 4, '../images/_gibson/_dove_CherrySunburst/gibsonDove_Cherry01.png'),
+(21, 4, '../images/_gibson/_dove_CherrySunburst/gibsonDove_Cherry02.png'),
+(22, 4, '../images/_gibson/_dove_CherrySunburst/gibsonDove_Cherry03.png'),
+(23, 4, '../images/_gibson/_dove_CherrySunburst/gibsonDove_Cherry04.png'),
+(24, 4, '../images/_gibson/_dove_CherrySunburst/gibsonDove_Cherry05.png'),
+(25, 5, '../images/_gibson/_lpCustomEbony/_lpCustomEbony01.jpg'),
+(26, 5, '../images/_gibson/_lpCustomEbony/_lpCustomEbony02.jpg'),
+(27, 5, '../images/_gibson/_lpCustomEbony/_lpCustomEbony03.jpg'),
+(28, 5, '../images/_gibson/_lpCustomEbony/_lpCustomEbony04.jpg'),
+(29, 6, '../images/_gibson/_fvCustomShop/gibsonFV_Custom01.jpg'),
+(30, 6, '../images/_gibson/_fvCustomShop/gibsonFV_Custom02.jpg'),
+(31, 6, '../images/_gibson/_fvCustomShop/gibsonFV_Custom03.png'),
+(34, 6, '../images/_gibson/_fvCustomShop/gibsonFV_Custom04.png'),
+(35, 6, '../images/_gibson/_fvCustomShop/gibsonFV_Custom05.png'),
+(36, 7, '../images/_gibson/_hummingbird_HeritageCherry/_hummingbird_HeritageCherry01.png'),
+(37, 7, '../images/_gibson/_hummingbird_HeritageCherry/_hummingbird_HeritageCherry02.png'),
+(38, 7, '../images/_gibson/_hummingbird_HeritageCherry/_hummingbird_HeritageCherry03.png'),
+(39, 7, '../images/_gibson/_hummingbird_HeritageCherry/_hummingbird_HeritageCherry04.png'),
+(40, 7, '../images/_gibson/_hummingbird_HeritageCherry/_hummingbird_HeritageCherry05.png'),
+(41, 8, '../images/_gibson/_esChuckBerry/_chuckBerry01.jpg'),
+(42, 8, '../images/_gibson/_esChuckBerry/_chuckBerry02.jpg'),
+(43, 8, '../images/_gibson/_esChuckBerry/_chuckBerry03.jpg'),
+(44, 8, '../images/_gibson/_esChuckBerry/_chuckBerry04.png'),
+(45, 8, '../images/_gibson/_esChuckBerry/_chuckBerry05.png'),
+(46, 9, '../images/_gibson/_firebird/firebird01.jpg'),
+(47, 9, '../images/_gibson/_firebird/firebird02.jpg'),
+(48, 9, '../images/_gibson/_firebird/firebird03.jpg'),
+(49, 9, '../images/_gibson/_firebird/firebird04.jpg'),
+(50, 9, '../images/_gibson/_firebird/firebird05.jpg'),
+(51, 10, '../images/_gibson/_58FVReissueWhite/58FVReissue01.jpg'),
+(52, 10, '../images/_gibson/_58FVReissueWhite/58FVReissue02.jpg'),
+(53, 10, '../images/_gibson/_58FVReissueWhite/58FVReissue03.jpg'),
+(54, 10, '../images/_gibson/_58FVReissueWhite/58FVReissue04.jpg'),
+(55, 10, '../images/_gibson/_58FVReissueWhite/58FVReissue05.jpg'),
+(56, 11, '../images/_esp/_ltdKH-V/_espKH_GoldSparkle01.png'),
+(57, 11, '../images/_esp/_ltdKH-V/_espKH_GoldSparkle02.png'),
+(58, 11, '../images/_esp/_ltdKH-V/_espKH_GoldSparkle03.png'),
+(59, 11, '../images/_esp/_ltdKH-V/_espKH_BlackSparkle01.png'),
+(60, 11, '../images/_esp/_ltdKH-V/_espKH_BlackSparkle02.png');
 
 -- --------------------------------------------------------
 
@@ -192,26 +250,25 @@ CREATE TABLE `product` (
   `productDescription` varchar(255) NOT NULL,
   `manufacturer` varchar(45) NOT NULL,
   `price` float NOT NULL,
-  `qtyInStock` int(11) NOT NULL,
-  `image` varchar(45) NOT NULL
+  `qtyInStock` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`productID`, `productName`, `productDescription`, `manufacturer`, `price`, `qtyInStock`, `image`) VALUES
-(1, 'Gibson Les Paul Supreme', 'Featuring a beautiful AAA-figured maple top on a mahogany body with Ultra-Modern Weight Relief. \r\nThe mahogany neck has an ebony fretboard with a compound radius and Super Split Block mother-of-pearl inlays. \r\n', 'Gibson', 3999, 10, '../images/_gibson/gibsonLPSup.png'),
-(2, 'Gibson 70\'s Flying V', 'The iconic 70s classic is ready to take flight again. With its bound rosewood fingerboard, SlimTaper™ neck, and a pair of uncovered 70s Tribute humbuckers™ hand-wired with Orange Drop® capacitors, this Flying V™ is set to nail all of the classic tones.', 'Gibson', 2499, 10, '../images/_gibson/gibsonFV.png'),
-(3, 'Gibson 70\'s Explorer', 'It has traveled to stages around the world, but the 70s icon is back to explore a new generation of players. Featuring a pair of 70s Tribute humbuckers™, hand-wired with Orange Drop® capacitors, this Explorer™ begs to be played loud. ', 'Gibson', 2499, 10, '../images/_gibson/gibsonEx.png'),
-(4, 'Gibson Dove', 'This famous flame maple-backed square-shoulder introduced in the early 60s is intertwined with one of the most revolutionary decades in popular music history. Its maple back and sides and long scale produce crisp, clear tone and projection.', 'Gibson', 3999, 10, '../images/_gibson/gibsonDove_Cherry.png'),
-(5, 'Gibson Les Paul Custom', 'As the flagship model from Gibson Custom Shop, the Les Paul Custom lives up to the high standards set by its 1950s archetype while evolving to a level of tone and performance more suited to today\'s musical demands.', 'Gibson', 3999, 10, '../images/_gibson/gibsonLP_Custom.jpg'),
-(6, 'Gibson Custom Flying V', 'The Flying V Custom adds upscale \"Black Beauty\" appointments to one of Gibson\'s boldest, most legendary designs. The result is guitar that exudes style and distinction -- a statement piece backed up with unparalleled Gibson tone and playability. From the ', 'Gibson', 5499, 10, '../images/_gibson/gibsonFV_Custom.png'),
-(7, 'Gibson Hummingbird', 'The unmistakable Gibson Hummingbird™ is followed by the masses as one of the most remarkable acoustic guitars ever built. The new Hummingbird Original blends vintage appointments and today\'s modern, high-quality build construction.', 'Gibson', 3999, 10, '../images/_gibson/gibsonHUM_Sunburst.png'),
-(8, 'Gibson Chuck Berry', 'Gibson is proud to present this first-ever Chuck Berry signature model, a replica of his 1955 ES-350T, to honor the legendary career of one of music\'s greatest innovators. It features historically-correct construction and appointments, hand-picked figured', 'Gibson', 4699, 10, '../images/_gibson/gibsonES_Chuck.jpg'),
-(9, 'Gibson 1963 Firebird V', 'When Gibson hired famed automotive designer Ray Dietrich to create a radical new solid body guitar, Rock \'n Roll history ensued. With its offset shape, neck-through construction and scorching mini-humbuckers, the \'63 Firebird™ V became an instant classic.', 'Gibson', 9799, 10, '../images/_gibson/gibsonFB_63Reissue.png'),
-(10, 'Gibson 1958 Korina Flying V', 'The Gibson Flying V™ was way ahead of its time when it was introduced in 1958, and only 81 were shipped that year, but it has become very popular in the years since then. The classic vintage Flying V features have been carefully recreated in this Historic', 'Gibson', 9999, 10, '../images/_gibson/gibsonFV_58ReissueWhite.png'),
-(11, 'ESP KH-V Metallic Gold', 'The KH-V offers neck-thru-body construction, with an extra-thin U-shaped three-piece maple neck and korina body at 25.5” scale. Its Macassar ebony fingerboard features pearloid wave inlays and 24 extra-jumbo frets. The sound of the KH-V is powered by a se', 'ESP', 2899, 10, '../images/_esp/esp_KH_GoldSparkle.png');
+INSERT INTO `product` (`productID`, `productName`, `productDescription`, `manufacturer`, `price`, `qtyInStock`) VALUES
+(1, 'Gibson Les Paul Supreme', 'Featuring a beautiful AAA-figured maple top on a mahogany body with Ultra-Modern Weight Relief. \r\nThe mahogany neck has an ebony fretboard with a compound radius and Super Split Block mother-of-pearl inlays. \r\n', 'Gibson', 3999, 10),
+(2, 'Gibson 70\'s Flying V', 'The iconic 70s classic is ready to take flight again. With its bound rosewood fingerboard, SlimTaper™ neck, and a pair of uncovered 70s Tribute humbuckers™ hand-wired with Orange Drop® capacitors, this Flying V™ is set to nail all of the classic tones.', 'Gibson', 2499, 10),
+(3, 'Gibson 70\'s Explorer', 'It has traveled to stages around the world, but the 70s icon is back to explore a new generation of players. Featuring a pair of 70s Tribute humbuckers™, hand-wired with Orange Drop® capacitors, this Explorer™ begs to be played loud. ', 'Gibson', 2499, 10),
+(4, 'Gibson Dove', 'This famous flame maple-backed square-shoulder introduced in the early 60s is intertwined with one of the most revolutionary decades in popular music history. Its maple back and sides and long scale produce crisp, clear tone and projection.', 'Gibson', 3999, 10),
+(5, 'Gibson Les Paul Custom', 'As the flagship model from Gibson Custom Shop, the Les Paul Custom lives up to the high standards set by its 1950s archetype while evolving to a level of tone and performance more suited to today\'s musical demands.', 'Gibson', 3999, 10),
+(6, 'Gibson Custom Flying V', 'The Flying V Custom adds upscale \"Black Beauty\" appointments to one of Gibson\'s boldest, most legendary designs. The result is guitar that exudes style and distinction -- a statement piece backed up with unparalleled Gibson tone and playability. From the ', 'Gibson', 5499, 10),
+(7, 'Gibson Hummingbird', 'The unmistakable Gibson Hummingbird™ is followed by the masses as one of the most remarkable acoustic guitars ever built. The new Hummingbird Original blends vintage appointments and today\'s modern, high-quality build construction.', 'Gibson', 3999, 10),
+(8, 'Gibson Chuck Berry', 'Gibson is proud to present this first-ever Chuck Berry signature model, a replica of his 1955 ES-350T, to honor the legendary career of one of music\'s greatest innovators. It features historically-correct construction and appointments, hand-picked figured', 'Gibson', 4699, 10),
+(9, 'Gibson 1963 Firebird V', 'When Gibson hired famed automotive designer Ray Dietrich to create a radical new solid body guitar, Rock \'n Roll history ensued. With its offset shape, neck-through construction and scorching mini-humbuckers, the \'63 Firebird™ V became an instant classic.', 'Gibson', 9799, 10),
+(10, 'Gibson 1958 Korina Flying V', 'The Gibson Flying V™ was way ahead of its time when it was introduced in 1958, and only 81 were shipped that year, but it has become very popular in the years since then. The classic vintage Flying V features have been carefully recreated in this Historic', 'Gibson', 9999, 10),
+(11, 'ESP KH-V Metallic Gold', 'The KH-V offers neck-thru-body construction, with an extra-thin U-shaped three-piece maple neck and korina body at 25.5” scale. Its Macassar ebony fingerboard features pearloid wave inlays and 24 extra-jumbo frets. The sound of the KH-V is powered by a se', 'ESP', 2899, 10);
 
 --
 -- Indexes for dumped tables
@@ -234,6 +291,13 @@ ALTER TABLE `customer`
 --
 ALTER TABLE `customerlogin`
   ADD PRIMARY KEY (`customerID`);
+
+--
+-- Indexes for table `images`
+--
+ALTER TABLE `images`
+  ADD PRIMARY KEY (`imageID`),
+  ADD KEY `productID` (`productID`);
 
 --
 -- Indexes for table `order`
@@ -266,6 +330,12 @@ ALTER TABLE `customer`
   MODIFY `customerID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1023;
 
 --
+-- AUTO_INCREMENT for table `images`
+--
+ALTER TABLE `images`
+  MODIFY `imageID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+
+--
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
@@ -286,6 +356,12 @@ ALTER TABLE `address`
 --
 ALTER TABLE `customerlogin`
   ADD CONSTRAINT `fk_customerlogin_customer1` FOREIGN KEY (`customerID`) REFERENCES `customer` (`customerID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Constraints for table `images`
+--
+ALTER TABLE `images`
+  ADD CONSTRAINT `images_ibfk_1` FOREIGN KEY (`productID`) REFERENCES `product` (`productID`);
 
 --
 -- Constraints for table `order`
