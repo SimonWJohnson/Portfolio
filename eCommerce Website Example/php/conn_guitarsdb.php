@@ -6,10 +6,10 @@
 //$database = "guitars.com";
 
 // InfinityFree Credentials
-$server = "sql307.infinityfree.com";
-$user = "if0_35802201";
-$password = "LmHzjMU9qkGs";
-$database = "if0_35802201_guitars_com";
+$server = 'sql307.infinityfree.com';
+$user = 'if0_35802201';
+$password = 'LmHzjMU9qkGs';
+$database = 'if0_35802201_guitars_com';
 
 // Connect to the MySQL server/db
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
