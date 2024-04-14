@@ -1,6 +1,7 @@
 <?php
 // Data access class/script for guitarsdb
-$server = "localhost:3307"; // Double check this for home XAMMP server
+//$server = "localhost:3307"; // Double check this for home XAMMP server
+$server = "sql307.infinityfree.com:3306";
 $user = "root";
 $password = "";
 //$database = "guitars.com";
