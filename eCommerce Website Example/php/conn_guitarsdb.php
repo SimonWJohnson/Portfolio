@@ -3,7 +3,8 @@
 $server = "localhost:3307"; // Double check this for home XAMMP server
 $user = "root";
 $password = "";
-$database = "guitars.com";
+//$database = "guitars.com";
+$database = "guitars_com";
 
 // Connect to the MySQL server/db
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
