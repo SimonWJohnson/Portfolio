@@ -26,9 +26,10 @@
 
         while($row = $result->fetch_assoc())
         {
-            $product = new Product($row["productID"], $row["productName"], $row["productDescription"], $row["manufacturer"], $row["price"], $row["qtyInStock"], $row["image"]);
+            $product = new Product($row["productID"], $row["productName"], $row["productDescription"], $row["manufacturer"], $row["price"], $row["qtyInStock"]);
+            $product->setImageList();
             echo "<div class='col-4'>";
-            echo "<a href='../html/productInfoDisplay.php?id=".$product->getProductID()."'><img src='".$product->getImage()."'></a>";
+            echo "<a href='../html/productInfoDisplay.php?id=".$product->getProductID()."'><img src='".$product->getImage(0)."'></a>";
             echo "<h4>".$product -> getProductName()."</h4>";
             echo "<div class='rating'>";
             echo   "<i class='fa fa-star'></i>";
